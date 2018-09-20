@@ -1,0 +1,5 @@
+[
+  "TestCheckout.py::test_CanAddItemPrice",
+  "TestCheckout.py::test_CanAddItem",
+  "TestCheckout.py::test_CanFindTheCurrentTotal"
+]
