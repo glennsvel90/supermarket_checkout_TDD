@@ -1,4 +1,6 @@
 [
   "TestCheckout.py::test_CanFindTheCurrentTotal",
-  "TestCheckout.py::test_GetCorrectTotalWithMultipleItems"
+  "TestCheckout.py::test_GetCorrectTotalWithMultipleItems",
+  "TestCheckout.py::test_AddDiscount",
+  "TestCheckout.py::test_ApplyDiscount"
 ]
