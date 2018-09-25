@@ -14,7 +14,7 @@ pip install pytest
 
 ### Running the program
  
-In the terminal, change to directory where the checkout.py file is located in, then type to run the script:
+In the terminal, change to the directory where the checkout.py file is located in, then type to run the script:
 
 ```
 python checkout.py
@@ -22,7 +22,7 @@ python checkout.py
 
 ### Testing the program
 
-In the terminal, change to directory where the TestCheckout.py file is located in, then type to run the script:
+In the terminal, change to the directory where the TestCheckout.py file is located in, then type to run the script:
 
 ```
 pytest -v TestCheckout.py
