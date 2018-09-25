@@ -5,14 +5,24 @@ class Checkout:
     """ Class to represent an checkout object system
     
     Attributes:
+        prices(dict): A dictionary of items and their value prices
+        discounts(dict): A dictionary of items and their value class instances of discounts
+        items(dict): A dictionary of items and each of their quantities added
         
-    
-
+   Methods:
+        addItem: Used to add an item.
+        addItemPrice: Used to add an item's price
+        addDiscount: Used to add a discount
+        CalculateTotal: Used to calculate the total of all items combined
+        CalculateItemTotal: Used to calculate the total cost of all items of one type
+        CalculateItemDiscountedTotal: Used to calculate the total cost of discounted items of a type
+        
     class Discount:
         """Class to represent the discount for an item"""
         def __init__(self, numberofItems, price):
             self.numberofItems = numberofItems
             self.price = price
+            
     def __init__(self):
         self.prices = {}
         self.discounts = {}
