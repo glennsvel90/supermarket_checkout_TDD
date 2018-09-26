@@ -2,7 +2,7 @@ import math
 
 
 class Checkout:
-    """ Class to represent an checkout object system
+    """ Class to represent a checkout object system
     
     Attributes:
         prices(dict): A dictionary of items and their value prices
@@ -29,19 +29,23 @@ class Checkout:
         self.items = {}
 
     def addDiscount(self, item, numberofItems, price):
+        """Used to add a discount"""
         discount = self.Discount(numberofItems,price)
         self.discounts[item] = discount
 
     def addItemPrice(self, item, price):
+        """Used to add an item's price"""
         self.prices[item] = price
 
     def addItem(self, item):
+        """Used to add an item."""
         if item in self.items:
             self.items[item] += 1
         else:
             self.items[item] = 1
 
     def CalculateTotal(self):
+        """Used to calculate the total of all items combined"""
         total = 0
         for item, cnt in self.items.items():
             total += self.calculateItemTotal(item, cnt)
@@ -49,6 +53,7 @@ class Checkout:
         return total
 
     def calculateItemTotal(self, item, cnt):
+        """Used to calculate the total cost of all items of one type"""
         total = 0
         if item in self.discounts:
             discount = self.discounts[item]
@@ -61,6 +66,7 @@ class Checkout:
         return total
 
     def calculateItemDiscountedTotal(self, item, cnt, discount):
+        """Used to calculate the total cost of discounted items of a type"""
         total = 0
         numofDiscounts = math.trunc(cnt/discount.numberofItems)
         total += numofDiscounts * discount.price
