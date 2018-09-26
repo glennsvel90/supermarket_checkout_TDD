@@ -11,18 +11,22 @@ A checkout cash register system can add items, set prices, give discounts(such a
 ```
 pip install pytest
 ```
-
-### Running the program
+### Using the program
  
-In the terminal, change to the directory where the checkout.py file is located in, then type to run the script:
+ In the terminal, change to the directory where the Checkout.py file is located in, then type:
 
 ```
-python checkout.py
+python 
 ```
-
+```
+import Checkout
+```
+```
+help(Checkout.Checkout)
+```
 ### Testing the program
 
-In the terminal, change to the directory where the TestCheckout.py file is located in, then type to run the script:
+In the terminal, change to the directory where the TestCheckout.py file is located in, then type:
 
 ```
 pytest -v TestCheckout.py
