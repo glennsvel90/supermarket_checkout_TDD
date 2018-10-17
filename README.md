@@ -31,3 +31,12 @@ In the terminal, change to the directory where the TestCheckout.py file is locat
 ```
 pytest -v TestCheckout.py
 ```
+Test Cases to make unit tests for:
+- [ ] creating an instance of the checkout class. 
+- [ ] add an item price
+- [ ] adding an individual item to the list of checkout items
+- [ ] calculating the current total
+- [ ] adding multiple items and getting the correct total
+- [ ] the class needs the ability to add discount rules
+- [ ] the class needs to be able to apply those discount rules when calculating the total
+- [ ] the class needs to throw an exception when an item is added that doesn't have a defined price.
